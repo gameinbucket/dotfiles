@@ -3,5 +3,6 @@ set -e
 cd "$(dirname "$0")"
 echo "$(basename "$0")"
 
-cp ./openbox/* ~/.config/openbox/.
-./openbox.sh
+./kill_tint2.sh
+./cp_tint2.sh
+./start_tint2.sh

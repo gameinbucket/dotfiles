@@ -2,28 +2,23 @@
 ! URxvt 
 ! ------------------------------------------------------------------------------
 
-#include ".config/colorschemes/dracula"
+#include ".config/colorschemes/hymn"
 
-URxvt*font: xft:mono:medium:size=10
-
-! URxvt*font:              xft:Source Code Pro font:size=9
-! URxvt*font:            xft:DejaVu Sans Mono Book font:size=9
-! URxvt*font:            xft:curie:size=7
-! URxvt*font:            xft:gomme:size=7
-
-URxvt*geometry:          60x26
-URxvt*letterSpace:       -1
-URxvt*lineSpace:         0
-URxvt*internalBorder:    12
-URxvt*externalBorder:    0
-URxvt*depth:             32
-URxvt*saveline:          2000
-URxvt*termName:          rxvt-256color
-URxvt*iso14755:          false
-URxvt*scrollBar:         false
-URxvt*urlLauncher:       firefox
-URxvt*underlineURLs:     true
-URxvt*urlButton:         1
-URxvt*buffered:          false
-URxvt*urgentOnBell:      false
-URxvt*visualBell:        false
+URxvt.font:           xft:GohuFont:pixelsize=14
+URxvt.boldFont:
+URxvt.geometry:       80x32
+URxvt.letterSpace:    0
+URxvt.lineSpace:      0
+URxvt.internalBorder: 12
+URxvt.externalBorder: 0
+URxvt.depth:          32
+URxvt.saveline:       2000
+URxvt.termName:       rxvt-256color
+URxvt.iso14755:       false
+URxvt.scrollBar:      false
+URxvt.urlLauncher:    firefox
+URxvt.underlineURLs:  true
+URxvt.urlButton:      1
+URxvt.buffered:       false
+URxvt.urgentOnBell:   false
+URxvt.visualBell:     false

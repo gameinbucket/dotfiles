@@ -3,4 +3,4 @@ set -e
 cd "$(dirname "$0")"
 echo "$(basename "$0")"
 
-xmodmap ~/.Xmodmap
+cp ./tint2/* ~/.config/tint2/.

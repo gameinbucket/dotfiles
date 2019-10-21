@@ -3,5 +3,4 @@ set -e
 cd "$(dirname "$0")"
 echo "$(basename "$0")"
 
-cp ./home/.Xresources ~/.
-./xresources.sh
+cp ./icons/* /usr/share/icons/hymn/.
