@@ -1,4 +1,4 @@
-# rice
+# dotfiles
 * linux theme configuration
 
 ### todo
