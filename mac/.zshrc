@@ -2,7 +2,7 @@
 
 autoload -Uz promptinit
 promptinit
-prompt default
+prompt off
 
 setopt histignorealldups sharehistory
 
@@ -18,7 +18,6 @@ zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' menu select=2
-eval "$(dircolors -b)"
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
@@ -33,7 +32,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # custom
 
-alias ls="ls --color"
+alias ls="ls -G"
 
 precmd=""
 preexec=""
@@ -45,10 +44,9 @@ select-word-style bash
 tabs 4
 export VISUAL=vim
 export EDITOR="$VISUAL"
-export TERM=rxvt-unicode-256color
 
 bindkey -e
-export PS1="%{%F{magenta}%}%n@%M%{%f%}:%{%F{blue}%}[%1d]%{%f%}$ "
+export PS1="%{%F{magenta}%}%n%{%f%}:%{%F{blue}%}[%1d]%{%f%}$ "
 
 bindkey "^[^[[C" forward-word
 bindkey "^[^[[D" backward-word
