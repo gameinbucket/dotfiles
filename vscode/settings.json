@@ -22,12 +22,12 @@
     "python.formatting.autopep8Args": [
         "--max-line-length=200"
     ],
-    "editor.fontFamily": "'Source Code Pro', 'Fira Code', 'Droid Sans Mono', 'monospace'",
+    "editor.fontFamily": "'Source Code Pro', 'monospace'",
     "terminal.integrated.fontFamily": "'monospace'",
     "scm.diffDecorations": "none",
     "editor.fontSize": 13,
     "editor.glyphMargin": false,
-    "workbench.statusBar.visible": true,
+    "workbench.statusBar.visible": false,
     "git.decorations.enabled": false,
     "workbench.tips.enabled": false,
     "vim.useSystemClipboard": true,
@@ -40,7 +40,9 @@
         "<C-s>": false,
         "<C-x>": false,
         "<C-c>": false,
-        "<C-v>": false,
+        "<C-v>": false
     },
-    "workbench.colorTheme": "Solarized Light"
+    "workbench.colorTheme": "Solarized Light",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, AlignConsecutiveDeclarations: true, ColumnLimit: 200, IndentWidth: 4, AllowShortCaseLabelsOnASingleLine: true, AlignConsecutiveAssignments: false, AlignConsecutiveDeclarations: false, AllowShortFunctionsOnASingleLine: false }",
 }
