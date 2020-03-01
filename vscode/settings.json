@@ -4,7 +4,7 @@
     "extensions.ignoreRecommendations": true,
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,
-    "window.menuBarVisibility": "default",
+    "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
@@ -27,7 +27,7 @@
     "scm.diffDecorations": "none",
     "editor.fontSize": 13,
     "editor.glyphMargin": false,
-    "workbench.statusBar.visible": false,
+    "workbench.statusBar.visible": true,
     "git.decorations.enabled": false,
     "workbench.tips.enabled": false,
     "vim.useSystemClipboard": true,
@@ -40,9 +40,11 @@
         "<C-s>": false,
         "<C-x>": false,
         "<C-c>": false,
-        "<C-v>": false
+        "<C-v>": false,
     },
-    "workbench.colorTheme": "Solarized Light",
     "C_Cpp.default.cStandard": "c11",
     "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, AlignConsecutiveDeclarations: true, ColumnLimit: 200, IndentWidth: 4, AllowShortCaseLabelsOnASingleLine: true, AlignConsecutiveAssignments: false, AlignConsecutiveDeclarations: false, AllowShortFunctionsOnASingleLine: false }",
+    "explorer.compactFolders": false,
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "workbench.colorTheme": "Solarized Light"
 }
