@@ -1,13 +1,30 @@
 tabs 4
 export VISUAL=vim
 export EDITOR="$VISUAL"
-export PATH="$PATH:/usr/local/go/bin:$HOME/.cargo/bin"
 export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\][\W]\[\033[00m\]\$ '
 
 function ll {
-  ls -l --color
+  ls -l --color "$@"
 }
 
-# if [ ! -z "$PS1" ]; then
-#     exec /bin/zsh $*
-# fi
+function gg {
+  ls -alF --color "$@"
+}
+
+function calc {
+  python -c 'print('"$@"')'
+}
+
+PATH=""
+PATH="$PATH:/usr/local/sbin"
+PATH="$PATH:/usr/local/bin"
+PATH="$PATH:/usr/sbin"
+PATH="$PATH:/usr/bin"
+PATH="$PATH:/sbin"
+PATH="$PATH:/bin"
+PATH="$PATH:/usr/games"
+PATH="$PATH:/usr/local/games"
+PATH="$PATH:/snap/bin"
+PATH="$PATH:/usr/local/go/bin"
+
+export PATH

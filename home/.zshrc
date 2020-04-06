@@ -33,19 +33,12 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # custom
 
-alias ls="ls --color"
-
 precmd=""
 preexec=""
 chpwd=""
 
 autoload -U select-word-style
 select-word-style bash
-
-tabs 4
-export VISUAL=vim
-export EDITOR="$VISUAL"
-export TERM=rxvt-unicode-256color
 
 bindkey -e
 export PS1="%{%F{magenta}%}%n@%M%{%f%}:%{%F{blue}%}[%1d]%{%f%}$ "
@@ -54,3 +47,38 @@ bindkey "^[^[[C" forward-word
 bindkey "^[^[[D" backward-word
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+
+tabs 4
+export VISUAL=vim
+export EDITOR="$VISUAL"
+export TERM=rxvt-unicode-256color
+
+function ll {
+  ls -l --color "$@"
+}
+
+function gg {
+  ls -alF --color "$@"
+}
+
+function calc {
+  python -c 'print('"$@"')'
+}
+
+PATH=""
+PATH="$PATH:/usr/local/sbin"
+PATH="$PATH:/usr/local/bin"
+PATH="$PATH:/usr/sbin"
+PATH="$PATH:/usr/bin"
+PATH="$PATH:/sbin"
+PATH="$PATH:/bin"
+PATH="$PATH:/usr/games"
+PATH="$PATH:/usr/local/games"
+PATH="$PATH:/snap/bin"
+PATH="$PATH:/usr/local/go/bin"
+PATH="$PATH:$HOME/.local/bin"
+PATH="$PATH:$HOME/.cargo/bin"
+PATH="$PATH:$HOME/.hymn/bin"
+
+export PATH
+
