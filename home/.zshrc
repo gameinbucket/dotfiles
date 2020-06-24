@@ -51,19 +51,10 @@ bindkey "^[[1;5D" backward-word
 tabs 4
 export VISUAL=vim
 export EDITOR="$VISUAL"
-export TERM=rxvt-unicode-256color
 
-function ll {
-  ls -l --color "$@"
-}
-
-function gg {
-  ls -alF --color "$@"
-}
-
-function calc {
-  python -c 'print('"$@"')'
-}
+export VULKAN_SDK="$HOME/Documents/programming/online/vulkan-sdk/x86_64"
+export VK_LAYER_PATH="$VULKAN_SDK/etc/vulkan/explicit_layer.d"
+export LD_LIBRARY_PATH="$VULKAN_SDK/lib:${LD_LIBRARY_PATH:-}"
 
 PATH=""
 PATH="$PATH:/usr/local/sbin"
@@ -82,3 +73,14 @@ PATH="$PATH:$HOME/.hymn/bin"
 
 export PATH
 
+function ll {
+  ls -l --color "$@"
+}
+
+function gg {
+  ls -alF --color "$@"
+}
+
+function calc {
+  python -c 'print('"$@"')'
+}
