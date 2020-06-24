@@ -4,10 +4,13 @@
 # vscode
 # wine
 # retro arch
-# snap openra
+# openra
 
 sudo apt-get update
 sudo apt-get upgrade
+
+sudo apt-get install redshift
+sudo apt-get install plank
 
 sudo apt-get install vlc
 # sudo apt-get install mpv
