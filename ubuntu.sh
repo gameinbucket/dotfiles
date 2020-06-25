@@ -23,8 +23,8 @@ sudo apt-get install python3
 sudo apt-get install vlc
 sudo apt-get install steam
 
-sudo apt-get install libpng
-sudo apt-get install libzip
+sudo apt-get install libpng-dev
+sudo apt-get install libzip-dev
 sudo apt-get install libsdl2-dev
 sudo apt-get install libsdl2-mixer-dev
 sudo apt-get install libvulkan-dev
