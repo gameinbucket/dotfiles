@@ -19,6 +19,7 @@ sudo apt-get install curl
 sudo apt-get install tmux
 sudo apt-get install ranger
 sudo apt-get install python3
+sudo apt-get install htop
 
 sudo apt-get install vlc
 sudo apt-get install steam
