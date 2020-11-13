@@ -1,8 +1,0 @@
-syntax "hymn" "\.hm$"
-color brightblue "^[a-z]*"
-color magenta "[0-9]*"
-color brightmagenta "\\b(return|for|if|elif|else|and|or|true|false)\\b"
-color red "\<(=|\+|\+=|\*=)\>"
-color green "\<(class|int|float|string|bool|mutable)\>"
-color yellow "echo"
-color brightred "\".*\""

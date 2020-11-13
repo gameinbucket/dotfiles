@@ -1,9 +1,15 @@
-set nowrap
-set number
-set noerrorbells
-set novisualbell
+syntax on
 
+set number
+set nowrap
+set novisualbell
+set noerrorbells
 set expandtab
 set shiftwidth=4
 set tabstop=4
-set term=screen-256color
+set noignorecase
+set autoindent
+set smartindent
+set incsearch
+set hlsearch
+set hidden
