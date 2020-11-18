@@ -55,6 +55,7 @@
   "scm.diffDecorations": "none",
   "terminal.integrated.commandsToSkipShell": [],
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.showExitAlert": false,
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-c>": false,
