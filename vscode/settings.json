@@ -12,8 +12,7 @@
   "editor.autoClosingOvertype": "never",
   "editor.autoClosingQuotes": "never",
   "editor.cursorStyle": "underline",
-  "editor.fontFamily": "'Fira Code', 'Source Code Pro', 'Terminus (TTF)', 'scientifica', 'monospace'",
-  "editor.fontSize": 12,
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.glyphMargin": false,
   "editor.gotoLocation.multipleDefinitions": "goto",
@@ -23,6 +22,22 @@
   "editor.renderControlCharacters": false,
   "editor.renderIndentGuides": false,
   "editor.renderWhitespace": "none",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "storage.type",
+          "support.type",
+          "variable.parameter",
+          "entity.name.type",
+          "entity.other.inherited-class"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
   "editor.wordWrap": "off",
   "explorer.autoReveal": false,
   "explorer.compactFolders": false,
@@ -32,13 +47,13 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
   "git.decorations.enabled": false,
   "javascript.validate.enable": false,
   "keyboard.dispatch": "keyCode",
   "python.formatting.autopep8Args": ["--max-line-length=200"],
   "scm.diffDecorations": "none",
   "terminal.integrated.commandsToSkipShell": [],
-  "terminal.integrated.fontFamily": "'Fira Code', 'Terminus (TTF)', 'monospace'",
   "terminal.integrated.fontSize": 14,
   "vim.handleKeys": {
     "<C-a>": false,
