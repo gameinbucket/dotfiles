@@ -1,78 +1,153 @@
+// Place your key bindings in this file to overwrite the defaults
 [
-    {
-      "key": "ctrl+tab ctrl+i",
-      "command": "editor.action.inspectTMScopes"
+  {
+    "key": "ctrl+tab ctrl+i",
+    "command": "editor.action.inspectTMScopes"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+alt+-",
+    "command": "-workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-editor.action.toggleTabFocusMode"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+alt+pagedown",
+    "command": "-workbench.action.terminal.scrollDown",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "shift+down",
+    "command": "workbench.action.terminal.scrollDown",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "pagedown",
+    "command": "workbench.action.terminal.scrollDownPage",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "shift+pagedown",
+    "command": "-workbench.action.terminal.scrollDownPage",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "shift+pagedown",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+alt+pageup",
+    "command": "-workbench.action.terminal.scrollUp",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "shift+up",
+    "command": "workbench.action.terminal.scrollUp",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "pageup",
+    "command": "workbench.action.terminal.scrollUpPage",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "shift+pageup",
+    "command": "-workbench.action.terminal.scrollUpPage",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "shift+pageup",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "-cursorUndo",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "editorScroll",
+    "args": {
+      "to": "up",
+      "by": "line",
+      "value": 30,
+      "revealCursor": true
     },
-    {
-      "key": "ctrl+=",
-      "command": "-workbench.action.zoomIn"
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editorScroll",
+    "args": {
+      "to": "down",
+      "by": "line",
+      "value": 30,
+      "revealCursor": true
     },
-    {
-      "key": "ctrl+-",
-      "command": "-workbench.action.zoomOut"
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "pageup",
+    "command": "-cursorPageUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "pageup",
+    "command": "editorScroll",
+    "args": {
+      "to": "up",
+      "by": "line",
+      "value": 60,
+      "revealCursor": true
     },
-    {
-      "key": "ctrl+=",
-      "command": "workbench.action.navigateForward"
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "pagedown",
+    "command": "-cursorPageDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "pagedown",
+    "command": "editorScroll",
+    "args": {
+      "to": "down",
+      "by": "line",
+      "value": 60,
+      "revealCursor": true
     },
-    {
-      "key": "ctrl+shift+-",
-      "command": "-workbench.action.navigateForward"
-    },
-    {
-      "key": "ctrl+-",
-      "command": "workbench.action.navigateBack"
-    },
-    {
-      "key": "ctrl+alt+-",
-      "command": "-workbench.action.navigateBack"
-    },
-    {
-      "key": "ctrl+m",
-      "command": "-editor.action.toggleTabFocusMode"
-    },
-    {
-      "key": "ctrl+m",
-      "command": "workbench.action.toggleMaximizedPanel"
-    },
-    {
-      "key": "shift+down",
-      "command": "workbench.action.terminal.scrollDown",
-      "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-      "key": "ctrl+alt+pagedown",
-      "command": "-workbench.action.terminal.scrollDown",
-      "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-      "key": "pagedown",
-      "command": "workbench.action.terminal.scrollDownPage",
-      "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-      "key": "shift+pagedown",
-      "command": "-workbench.action.terminal.scrollDownPage",
-      "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-      "key": "shift+up",
-      "command": "workbench.action.terminal.scrollUp",
-      "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-      "key": "ctrl+alt+pageup",
-      "command": "-workbench.action.terminal.scrollUp",
-      "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-      "key": "pageup",
-      "command": "workbench.action.terminal.scrollUpPage",
-      "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-      "key": "shift+pageup",
-      "command": "-workbench.action.terminal.scrollUpPage",
-      "when": "terminalFocus && terminalProcessSupported"
-    }
-  ]
+    "when": "editorTextFocus"
+  }
+]
