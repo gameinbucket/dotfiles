@@ -13,3 +13,4 @@ set smartindent
 set incsearch
 set hlsearch
 set hidden
+set noswapfile

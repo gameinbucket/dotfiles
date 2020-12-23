@@ -27,15 +27,20 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
+        "scope": ["support.type"],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
         "scope": [
           "storage.type",
-          "support.type",
           "variable.parameter",
           "entity.name.type",
           "entity.other.inherited-class"
         ],
         "settings": {
-          "fontStyle": ""
+          "fontStyle": "bold"
         }
       }
     ]
@@ -83,5 +88,6 @@
   "workbench.enableExperiments": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
-  "workbench.tips.enabled": false
+  "workbench.tips.enabled": false,
+  "search.quickOpen.includeHistory": false
 }
