@@ -70,3 +70,105 @@ function fzf {
   fi
 }
 
+function fmg {
+  pos=0
+  open=false
+  keep=false
+  refresh=true
+  file=''
+  while :
+  do
+    cur=0
+    screen=''
+    for entry in *
+    do
+      if [ $pos -eq $cur ]
+      then
+        if [ $open = true ]
+        then
+          if [ -d "$entry" ]
+          then
+             cd "$entry"
+           else
+             $EDITOR "$entry"
+             keep=true
+           fi
+           break
+        else
+          file="$entry"
+        fi
+        screen+=" -> "
+      else
+        screen+="    "
+      fi
+      screen+="$entry"
+      if [ -d "$entry" ]; then screen+=$'/\n'
+      elif [ -x "$entry" ]; then screen+=$'*\n'
+      else screen+=$'\n'
+      fi
+      cur=$((cur + 1))
+    done
+    if [ $open = true ]
+    then
+      [ $keep = false ] && pos=0
+      open=false
+      keep=false
+      refresh=true
+      continue
+    fi
+    if [ $refresh = true ]
+    then
+      refresh=false
+      clear
+    fi
+    echo "$PWD"$'\n\n'"$screen"
+    info="\"$file\" $(file -b "$file")"
+    if [ -f "$file" ]
+    then
+      info+=", $(wc -l < "$file")L, $(wc -c < "$file")C"
+    fi
+    echo "$info"
+    while :
+    do
+      read -srn 1
+      case "$REPLY" in
+        'j')
+          pos=$((pos + 1))
+          if [ $pos -ge $cur ]
+          then
+            pos=$((cur - 1))
+            continue
+          else
+            refresh=true
+          fi
+          ;;
+        'k')
+          pos=$((pos - 1))
+          if [ $pos -lt 0 ]
+          then
+            pos=0
+            continue
+          else
+            refresh=true
+          fi
+          ;;
+        'q')
+          return
+          ;;
+        'h')
+          cd ..
+          pos=0
+          refresh=true
+          ;;
+        'l')
+          open=true
+          refresh=true
+          ;;
+        *)
+          continue
+          ;;
+      esac
+      break
+    done
+  done
+}
