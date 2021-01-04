@@ -70,12 +70,24 @@ function fzf {
   fi
 }
 
-function fmg {
+function fm {
+  nocol='\e[0m'
+  red='\e[0;31m'
+  green='\e[0;32m'
+  yellow='\e[0;33m'
+  pink='\e[0;35m'
+  cyan='\e[0;36m'
+  pinkbg='\e[30;105m'
+  cyanbg='\e[30;46m'
+  whitebg='\e[30;107m'
   pos=0
   open=false
   keep=false
-  refresh=true
   file=''
+  tput sc
+  tput civis
+  tput smcup
+  tput clear
   while :
   do
     cur=0
@@ -97,14 +109,15 @@ function fmg {
         else
           file="$entry"
         fi
-        screen+=" -> "
+        if [ -d "$entry" ]; then screen+="${cyanbg}${entry}${nocol}"$'/\n'
+        elif [ -x "$entry" ]; then screen+="${pinkbg}${entry}${nocol}"$'*\n'
+        else screen+="${whitebg}${entry}${nocol}"$'\n'
+        fi
       else
-        screen+="    "
-      fi
-      screen+="$entry"
-      if [ -d "$entry" ]; then screen+=$'/\n'
-      elif [ -x "$entry" ]; then screen+=$'*\n'
-      else screen+=$'\n'
+        if [ -d "$entry" ]; then screen+="${cyan}${entry}${nocol}"$'/\n'
+        elif [ -x "$entry" ]; then screen+="${pink}${entry}${nocol}"$'*\n'
+        else screen+="${entry}"$'\n'
+        fi
       fi
       cur=$((cur + 1))
     done
@@ -113,15 +126,12 @@ function fmg {
       [ $keep = false ] && pos=0
       open=false
       keep=false
-      refresh=true
       continue
     fi
-    if [ $refresh = true ]
-    then
-      refresh=false
-      clear
-    fi
-    echo "$PWD"$'\n\n'"$screen"
+    tput clear
+    tput home
+    screen="${red}$(whoami)${nocol}@${yellow}$(hostname)${nocol}:${green}$(pwd)${nocol}"$'\n\n'"$screen"
+    echo -e "$screen"
     info="\"$file\" $(file -b "$file")"
     if [ -f "$file" ]
     then
@@ -138,8 +148,6 @@ function fmg {
           then
             pos=$((cur - 1))
             continue
-          else
-            refresh=true
           fi
           ;;
         'k')
@@ -148,21 +156,20 @@ function fmg {
           then
             pos=0
             continue
-          else
-            refresh=true
           fi
           ;;
         'q')
+          tput rmcup
+          tput rc
+          tput cnorm
           return
           ;;
         'h')
           cd ..
           pos=0
-          refresh=true
           ;;
         'l')
           open=true
-          refresh=true
           ;;
         *)
           continue
