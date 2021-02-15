@@ -1,2 +1,3 @@
-# Configs
+# Dotfiles
+
 Settings and stuff

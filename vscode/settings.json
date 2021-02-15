@@ -1,25 +1,38 @@
 {
   "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, AlignConsecutiveDeclarations: true, ColumnLimit: 1000, IndentWidth: 4, AllowShortCaseLabelsOnASingleLine: true, AlignConsecutiveAssignments: false, AlignConsecutiveDeclarations: false, AllowShortFunctionsOnASingleLine: false }",
   "C_Cpp.default.cStandard": "c11",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "breadcrumbs.enabled": false,
-  "editor.hover.enabled": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingOvertype": "never",
   "editor.autoClosingQuotes": "never",
   "editor.cursorStyle": "underline",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.fontSize": 1,
   "editor.formatOnSave": true,
   "editor.glyphMargin": false,
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.hover.enabled": false,
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
   "editor.renderIndentGuides": false,
@@ -27,7 +40,9 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": ["support.type"],
+        "scope": [
+          "support.type"
+        ],
         "settings": {
           "fontStyle": ""
         }
@@ -58,8 +73,11 @@
   "git.decorations.enabled": false,
   "javascript.validate.enable": false,
   "keyboard.dispatch": "keyCode",
-  "python.formatting.autopep8Args": ["--max-line-length=200"],
+  "python.formatting.autopep8Args": [
+    "--max-line-length=200"
+  ],
   "scm.diffDecorations": "none",
+  "search.quickOpen.includeHistory": false,
   "terminal.integrated.commandsToSkipShell": [],
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.showExitAlert": false,
@@ -88,6 +106,5 @@
   "workbench.enableExperiments": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
-  "workbench.tips.enabled": false,
-  "search.quickOpen.includeHistory": false
+  "workbench.tips.enabled": false
 }
