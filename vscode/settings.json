@@ -25,18 +25,21 @@
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingOvertype": "never",
   "editor.autoClosingQuotes": "never",
+  "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "underline",
   "editor.fontFamily": "Consolas, 'Courier New', monospace",
-  "editor.fontSize": 1,
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.glyphMargin": false,
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
-  "editor.hover.enabled": false,
+  "editor.hover.enabled": true,
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
   "editor.renderIndentGuides": false,
+  "editor.renderLineHighlight": "line",
   "editor.renderWhitespace": "none",
+  "editor.suggest.insertMode": "replace",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -97,6 +100,11 @@
   "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": false,
+  "workbench.colorCustomizations": {
+    "[Default Dark+]": {
+      "editor.lineHighlightBackground": "#3e3d32"
+    }
+  },
   "workbench.colorTheme": "Monokai",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
