@@ -14,6 +14,7 @@ alias ll='ls -l --color'
 alias lt='ls -lt --color'
 alias gg='ls -Aght --color --classify'
 
+alias cd-='cd -'
 alias cd..='cd ..'
 
 alias cp='cp -iv'
@@ -29,7 +30,7 @@ function calc {
 function sort-json {
   python -c $'
 import json
-path = \''$1$'\'
+path = \''"$1"$'\'
 if path == \'\':
     print("Format JSON file and sort keys.")
     print()

@@ -90,6 +90,7 @@
     "titleBar.activeBackground": "#5f574f",
     "titleBar.activeForeground": "#fff1e8"
   },
+  "name": "PICO-8",
   "tokenColors": [
     {
       "scope": [
@@ -170,6 +171,5 @@
       }
     }
   ],
-  "name": "PICO-8",
   "type": "light"
 }

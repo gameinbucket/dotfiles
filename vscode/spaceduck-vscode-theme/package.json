@@ -1,0 +1,21 @@
+{
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Spaceduck",
+        "path": "./themes/spaceduck-theme.json",
+        "uiTheme": "vs-dark"
+      }
+    ]
+  },
+  "description": "SpaceDuck  color theme",
+  "displayName": "SpaceDuck Theme",
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "name": "spaceduck",
+  "version": "0.0.1"
+}

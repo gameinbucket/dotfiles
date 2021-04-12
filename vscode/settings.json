@@ -44,21 +44,17 @@
     "textMateRules": [
       {
         "scope": [
-          "support.type"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      },
-      {
-        "scope": [
+          "support.type",
           "storage.type",
           "variable.parameter",
           "entity.name.type",
-          "entity.other.inherited-class"
+          "entity.other.inherited-class",
+          "variable.language.this",
+          "keyword.operator.new",
+          "support.class"
         ],
         "settings": {
-          "fontStyle": "bold"
+          "fontStyle": ""
         }
       }
     ]
@@ -84,18 +80,6 @@
   "terminal.integrated.commandsToSkipShell": [],
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.showExitAlert": false,
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-c>": false,
-    "<C-f>": false,
-    "<C-h>": false,
-    "<C-s>": false,
-    "<C-v>": false,
-    "<C-w>": false,
-    "<C-x>": false
-  },
-  "vim.useCtrlKeys": true,
-  "vim.useSystemClipboard": true,
   "window.menuBarVisibility": "toggle",
   "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
   "window.zoomLevel": 0,

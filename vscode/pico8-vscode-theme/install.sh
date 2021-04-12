@@ -1,5 +1,7 @@
 #!/bin/bash
-dir="$HOME/.vscode/extensions/pico8-theme"
-mkdir -p "$dir"
-cp package.json "$dir"/.
-cp -r themes "$dir"/.
+cd "$(dirname "$0")"
+
+mkdir -p ~/.vscode/extensions/pico8-theme
+
+cp package.json ~/.vscode/extensions/pico8-theme/.
+cp -R themes ~/.vscode/extensions/pico8-theme/.
