@@ -1,0 +1,16 @@
+#000000 black
+#1d2b53 storm
+#7e2553 wine
+#008751 moss
+#ab5236 tan
+#5f574f slate
+#c2c3c7 silver
+#fff1e8 white
+#ff004d ember
+#ffa300 orange
+#ffec27 lemon
+#00e436 lime
+#29adff sky
+#83769c dusk
+#ff77a8 pink
+#ffccaa peach

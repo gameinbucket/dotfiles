@@ -1,0 +1,21 @@
+{
+  "name": "pico8-theme",
+  "displayName": "PICO-8 Theme",
+  "description": "Unofficial PICO-8 color theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "PICO 8",
+        "uiTheme": "vs",
+        "path": "./themes/pico8-theme.json"
+      }
+    ]
+  }
+}
