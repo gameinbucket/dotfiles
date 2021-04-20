@@ -5,17 +5,17 @@
   "contributes": {
     "themes": [
       {
-        "label": "Spaceduck",
-        "path": "./themes/spaceduck-theme.json",
+        "label": "My Theme",
+        "path": "./themes/my-theme.json",
         "uiTheme": "vs-dark"
       }
     ]
   },
-  "description": "Spaceduck color theme",
-  "displayName": "Spaceduck Theme",
+  "description": "My color theme",
+  "displayName": "My Theme",
   "engines": {
     "vscode": "^1.42.0"
   },
-  "name": "spaceduck-theme",
+  "name": "my-theme",
   "version": "0.0.1"
 }

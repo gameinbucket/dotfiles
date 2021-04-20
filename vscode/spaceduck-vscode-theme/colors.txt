@@ -1,0 +1,10 @@
+#e33400 red
+#e39400 orange
+#f2ce00 yellow
+#00a3cc cyan
+#5ccc96 green
+#b3a1e6 purple
+#7a5ccc purple2
+#ce6f8f magenta
+#2e3459 dark purple
+#686f9a dark purple2
