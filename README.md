@@ -1,3 +1,3 @@
-# Dotfiles
+# Dot files
 
 Settings and stuff
